@@ -22,7 +22,7 @@ int main()
         {"luc", "9"}
     };
    
-    struct Classes class_3C[] =
+    struct Classes class_3C[] 
     {
         {"quentine", "17"},
         {"julie", "15"},
@@ -50,7 +50,7 @@ void average(struct Classes *e, int total, char *class_name)
         sum += num; 
     }
 
-    float average = sum / total;
+    float average = sum / (float)total;
      
     printf("Average for %s: %g.\n", class_name, average);
 }
